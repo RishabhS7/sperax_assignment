@@ -294,7 +294,8 @@
   height: 8px;
   position: absolute;
 }
-.landing-page-divtextcenter {
+.connectwallet {
+  border: none;
   top: 18.600006103515625px;
   left: 232.275146484375px;
   width: 148px;
@@ -304,8 +305,6 @@
   align-items: flex-start;
   border-radius: 90px;
   background-color: rgba(49, 193, 191, 1);
-}
-.landing-page-text17 {
   color: rgba(255, 255, 255, 1);
   height: auto;
   font-size: 16px;
@@ -317,6 +316,10 @@
   font-stretch: normal;
   text-decoration: none;
 }
+.connectwallet:hover {
+  background-color: rgba(49, 185, 191, 1);
+}
+
 .landing-page-diviicon241 {
   top: 22.600000381469727px;
   left: 449.5899963378906px;

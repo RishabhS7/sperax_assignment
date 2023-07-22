@@ -1,5 +1,8 @@
 import demeterpng from "../assets/demeter.png";
 import downArrow from "../assets/downarrow.svg.svg";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectWalletButton } from "./connectButton";
+
 function Header() {
   return (
     <div className="landing-page-divheadercontainer">
@@ -77,11 +80,9 @@ function Header() {
               />
             </div>
           </div>
-          <div className="landing-page-divtextcenter">
-            <span className="landing-page-text17">
-              <span>Connect wallet</span>
-            </span>
-          </div>
+
+          <ConnectWalletButton />
+
           <div className="landing-page-diviicon241">
             <img
               src="/imorecc8d8ec7svg1310-s84mb.svg"

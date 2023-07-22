@@ -1,12 +1,20 @@
 import speraxlogogray from "../assets/speraxlogogrey.png";
 import usdArbitrium from "../assets/usdArbitrium.png";
 import spaArbitrium from "../assets/spaarbitrium.png";
-// import vespaArbitrium from "../assets/;
-// import spaArbitrium from "../assets/;
-// import spaArbitrium from "../assets/;
-// import spaArbitrium from "../assets/;
-// import spaArbitrium from "../assets/;
-// import spaArbitrium from "../assets/;
+import copy from "../assets/copy.svg";
+import share from "../assets/share.png";
+import twitter from "../assets/twitter.png";
+import discord from "../assets/discord.png";
+import github from "../assets/github.png";
+import telegram from "../assets/telegram.png";
+import medium from "../assets/medium.png";
+import footer1 from "../assets/footer1.png";
+import footer2 from "../assets/footer2.png";
+import vespoarbitrium from "../assets/vespoarbitrium.png";
+import wspa from "../assets/wspa.png";
+import bridge from "../assets/bridge.png";
+import swap from "../assets/swap.png";
+import rightArrow from "../assets/rightArrow.svg";
 function Footer() {
   return (
     <div className="landing-page-footer">
@@ -37,35 +45,35 @@ function Footer() {
             <div className="landing-page-divfrl">
               <div className="landing-page-link-img">
                 <img
-                  src="/frame1366-8tp.svg"
+                  src={discord}
                   alt="Frame1366"
                   className="landing-page-frame16"
                 />
               </div>
               <div className="landing-page-link-img1">
                 <img
-                  src="/frame1369-udd.svg"
+                  src={twitter}
                   alt="Frame1369"
                   className="landing-page-frame17"
                 />
               </div>
               <div className="landing-page-link-img2">
                 <img
-                  src="/frame1372-7l9.svg"
+                  src={telegram}
                   alt="Frame1372"
                   className="landing-page-frame18"
                 />
               </div>
               <div className="landing-page-link-img3">
                 <img
-                  src="/frame1375-lw0t.svg"
+                  src={github}
                   alt="Frame1375"
                   className="landing-page-frame19"
                 />
               </div>
               <div className="landing-page-link-img4">
                 <img
-                  src="/frame1378-quk.svg"
+                  src={medium}
                   alt="Frame1378"
                   className="landing-page-frame20"
                 />
@@ -90,14 +98,14 @@ function Footer() {
                 <div className="landing-page-divfrl1">
                   <div className="landing-page-spancopyicon">
                     <img
-                      src="/copy395a4a63svg1393-gky9.svg"
+                      src={copy}
                       alt="copy395a4a63svg1393"
                       className="landing-page-copy395a4a63svg"
                     />
                   </div>
                   <div className="landing-page-link1">
                     <img
-                      src="/iopen868c8b2fsvg1396-t0ve.svg"
+                      src={share}
                       alt="iopen868c8b2fsvg1396"
                       className="landing-page-iopen868c8b2fsvg"
                     />
@@ -107,20 +115,17 @@ function Footer() {
               <div className="landing-page-divflex08">
                 <div className="landing-page-img03">
                   <img
-                    src="/frame1400-t9j.svg"
+                    src={footer1}
                     alt="Frame1400"
                     className="landing-page-frame21"
                   />
                 </div>
                 <div className="landing-page-img04">
                   <img
-                    src="/frame1403-jik.svg"
+                    src={footer2}
                     alt="Frame1403"
                     className="landing-page-frame22"
                   />
-                </div>
-                <div className="landing-page-img05">
-                  <img src alt="Frame1414" className="landing-page-frame23" />
                 </div>
               </div>
             </div>
@@ -137,27 +142,21 @@ function Footer() {
                   <span className="landing-page-text49">
                     <span>SPA Arbitrum</span>
                   </span>
-                  <div className="landing-page-img06">
-                    <img
-                      src="/frame1427-84u.svg"
-                      alt="Frame1427"
-                      className="landing-page-frame24"
-                    />
-                  </div>
                 </div>
-                <div className="landing-page-divfrl2">
-                  <div className="landing-page-spancopyicon1">
+
+                <div className="landing-page-divfrl1">
+                  <div className="landing-page-spancopyicon">
                     <img
-                      src="/copy395a4a63svg1431-sdwk.svg"
-                      alt="copy395a4a63svg1431"
-                      className="landing-page-copy395a4a63svg1"
+                      src={copy}
+                      alt="copy395a4a63svg1393"
+                      className="landing-page-copy395a4a63svg"
                     />
                   </div>
-                  <div className="landing-page-link2">
+                  <div className="landing-page-link1">
                     <img
-                      src="/iopen868c8b2fsvg1434-komn.svg"
-                      alt="iopen868c8b2fsvg1434"
-                      className="landing-page-iopen868c8b2fsvg1"
+                      src={share}
+                      alt="iopen868c8b2fsvg1396"
+                      className="landing-page-iopen868c8b2fsvg"
                     />
                   </div>
                 </div>
@@ -165,20 +164,17 @@ function Footer() {
               <div className="landing-page-divflex11">
                 <div className="landing-page-img07">
                   <img
-                    src="/frame1438-eg9x.svg"
+                    src={footer1}
                     alt="Frame1438"
                     className="landing-page-frame25"
                   />
                 </div>
                 <div className="landing-page-img08">
                   <img
-                    src="/frame1441-joia.svg"
+                    src={footer2}
                     alt="Frame1441"
                     className="landing-page-frame26"
                   />
-                </div>
-                <div className="landing-page-img09">
-                  <img src alt="Frame1452" className="landing-page-frame27" />
                 </div>
               </div>
             </div>
@@ -186,7 +182,7 @@ function Footer() {
               <div className="landing-page-divflex13">
                 <div className="landing-page-divcoinicon242">
                   <img
-                    src={spaArbitrium}
+                    src={vespoarbitrium}
                     alt="iconvespa211e7225svg1457"
                     className="landing-page-iconvespa211e7225svg"
                   />
@@ -194,27 +190,20 @@ function Footer() {
                 <span className="landing-page-text51">
                   <span>veSPA Arbitrum</span>
                 </span>
-                <div className="landing-page-img10">
-                  <img
-                    src="/frame1467-x1qh.svg"
-                    alt="Frame1467"
-                    className="landing-page-frame28"
-                  />
-                </div>
               </div>
-              <div className="landing-page-divfrl3">
-                <div className="landing-page-spancopyicon2">
+              <div className="landing-page-divfrl1">
+                <div className="landing-page-spancopyicon">
                   <img
-                    src="/copy395a4a63svg1471-bl3p.svg"
-                    alt="copy395a4a63svg1471"
-                    className="landing-page-copy395a4a63svg2"
+                    src={copy}
+                    alt="copy395a4a63svg1393"
+                    className="landing-page-copy395a4a63svg"
                   />
                 </div>
-                <div className="landing-page-link3">
+                <div className="landing-page-link1">
                   <img
-                    src="/iopen868c8b2fsvg1474-cif.svg"
-                    alt="iopen868c8b2fsvg1474"
-                    className="landing-page-iopen868c8b2fsvg2"
+                    src={share}
+                    alt="iopen868c8b2fsvg1396"
+                    className="landing-page-iopen868c8b2fsvg"
                   />
                 </div>
               </div>
@@ -224,7 +213,7 @@ function Footer() {
                 <div className="landing-page-divflex15">
                   <div className="landing-page-divcoinicon243">
                     <img
-                      src="/iconwspaselect4953c152svg1480-d9o.svg"
+                      src={wspa}
                       alt="iconwspaselect4953c152svg1480"
                       className="landing-page-iconwspaselect4953c152svg"
                     />
@@ -233,38 +222,39 @@ function Footer() {
                     <span>wSPA Ethereum</span>
                   </span>
                 </div>
-                <div className="landing-page-divfrl4">
-                  <div className="landing-page-spancopyicon3">
+                <div className="landing-page-divfrl1">
+                  <div className="landing-page-spancopyicon">
                     <img
-                      src="/copy395a4a63svg1490-9m6w.svg"
-                      alt="copy395a4a63svg1490"
-                      className="landing-page-copy395a4a63svg3"
+                      src={copy}
+                      alt="copy395a4a63svg1393"
+                      className="landing-page-copy395a4a63svg"
                     />
                   </div>
-                  <div className="landing-page-link4">
+                  <div className="landing-page-link1">
                     <img
-                      src="/iopen868c8b2fsvg1493-74qc.svg"
-                      alt="iopen868c8b2fsvg1493"
-                      className="landing-page-iopen868c8b2fsvg3"
+                      src={share}
+                      alt="iopen868c8b2fsvg1396"
+                      className="landing-page-iopen868c8b2fsvg"
                     />
                   </div>
                 </div>
               </div>
               <div className="landing-page-divflex16">
                 <div className="landing-page-divfrl5">
-                  <button className="landing-page-diviiconbutton">
+                  {/* <button className="landing-page-diviiconbutton">
+                   
+                  </button> */}
+                  <div className="landing-page-divfrl6">
+                    {/* <span className="landing-page-text55"> */}
                     <img
-                      src="/iswapgreyc373739asvg1498-2s3.svg"
+                      src={swap}
                       alt="iswapgreyc373739asvg1498"
-                      className="landing-page-iswapgreyc373739asvg"
+                      className="landing-page-ibridgegreyff059585svg"
                     />
-                  </button>
-                  <div className="landing-page-link5">
-                    <span className="landing-page-text55">
-                      <span>SPA</span>
-                    </span>
+                    {/* </span> */}
+                    <span className="landing-page-text55">SPA</span>
                     <img
-                      src="/svg1505-am7.svg"
+                      src={rightArrow}
                       alt="SVG1505"
                       className="landing-page-svg"
                     />
@@ -274,13 +264,13 @@ function Footer() {
                   </div>
                 </div>
                 <div className="landing-page-divfrl6">
-                  <button className="landing-page-diviiconbutton1">
-                    <img
-                      src="/ibridgegreyff059585svg1511-kut.svg"
-                      alt="ibridgegreyff059585svg1511"
-                      className="landing-page-ibridgegreyff059585svg"
-                    />
-                  </button>
+                  {/* <button className="landing-page-diviiconbutton1"> */}
+                  <img
+                    src={bridge}
+                    alt="ibridgegreyff059585svg1511"
+                    className="landing-page-ibridgegreyff059585svg"
+                  />
+                  {/* </button> */}
                   <span className="landing-page-text59">
                     <span>Sperax- Arbitrum Bridge</span>
                   </span>
