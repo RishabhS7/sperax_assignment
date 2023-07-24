@@ -2,8 +2,13 @@ import demeterpng from "../assets/demeter.png";
 import downArrow from "../assets/downarrow.svg.svg";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { ConnectWalletButton } from "./connectButton";
+// import { useSigner } from "wagmi";
+import Web3 from "web3";
 
 function Header() {
+  // const { data: signer } = useSigner();
+
+  // const web3 = new Web3((signer?.provider).provider);
   return (
     <div className="landing-page-divheadercontainer">
       <div className="landing-page-divwfull">

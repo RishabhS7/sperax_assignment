@@ -1,3 +1,17 @@
+.modalClass {
+  border-radius: 10px;
+  /* min-height: 40%; */
+  min-width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.modalClass div {
+  /* justify-content: center;
+  display: grid; */
+  padding: 20px;
+  text-align: center;
+}
+
 .landing-page-container {
   width: 100%;
   display: flex;

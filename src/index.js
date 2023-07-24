@@ -6,8 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { wagmiConfig, chains } from "../src/config/walletConfig";
 import { WagmiConfig } from "wagmi";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <WagmiConfig config={wagmiConfig}>

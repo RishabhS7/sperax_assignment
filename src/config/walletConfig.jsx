@@ -8,6 +8,8 @@ import {
   arbitrum,
   zora,
   goerli,
+  bsc,
+  bscTestnet,
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -18,6 +20,8 @@ export const { chains, publicClient, webSocketPublicClient } = configureChains(
     optimism,
     arbitrum,
     zora,
+    bsc,
+    bscTestnet,
     ...(process.env.REACT_APP_ENABLE_TESTNETS === "true" ? [goerli] : []),
   ],
   [publicProvider()]
