@@ -14,57 +14,47 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# Token Transfer - Sperax Assignment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About
 
-### `npm run build`
+The Dapp is a decentralized application built using React, JavaScript, Wagmi, and viem for contract interactions. It utilizes Rainbow kit for wallet connections, which supports multiple chains and wallet types, such as Metamask, Wallet Connect, Coinbase, etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How it Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. User connects to the Dapp through the Rainbow kit connect button.
+2. The user enters the Ethereum token address.
+3. After clicking the submit button, the Dapp displays the amount of ERC20 tokens that the user currently holds.
+4. A box opens where the user can enter the recipient's address to receive the same ERC20 tokens.
+5. The user adds the amount of tokens to transfer and submits the transaction.
+6. The user then needs to confirm the transaction using their Metamask wallet.
+7. Upon confirmation, the specified amount of ERC20 tokens will be transferred to the recipient's address.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To install and run the Dapp, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository by running the following command:
+   git clone https://github.com/RishabhS7/sperax_assignment.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Navigate to the project directory and install the dependencies using npm:
+   cd sperax_assignment
+   npm install
+   
+5. Once the installation is successful, start the Dapp using the following command:
+   npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Requirements
 
-## Learn More
+To use the Dapp, make sure you have the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Node (for running npm commands)
+- Git (for cloning the repository)
+- A code editor such as Visual Studio Code or any other editor of your choice
+- A blockchain wallet with an address and access to the particular chain's faucet. Supported wallets include Metamask, Wallet Connect, Coinbase, etc.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Please note that Rainbow kit is used for wallet connections, so you may need to have the compatible wallet extension (e.g., Metamask) installed in your browser to interact with the Dapp.
 
-### Code Splitting
+Feel free to explore the Dapp, transfer ERC20 tokens, and let us know if you encounter any issues or have any feedback! Happy transacting!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
