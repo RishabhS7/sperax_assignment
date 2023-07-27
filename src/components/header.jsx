@@ -4,6 +4,9 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { ConnectWalletButton } from "./connectButton";
 // import { useSigner } from "wagmi";
 import Web3 from "web3";
+import spaarbitrium from "../assets/spaarbitrium.png";
+import sun from "../assets/sun.svg";
+import settings from "../assets/settings.svg";
 
 function Header() {
   // const { data: signer } = useSigner();
@@ -63,26 +66,20 @@ function Header() {
           </div>
         </div>
         <div className="landing-page-divoperations">
-          <button className="landing-page-button">
-            <span className="landing-page-text14">
-              <span>Buy SPA &amp; USDs</span>
-            </span>
+          <button className="landing-page-button landing-page-text14">
+            Buy SPA &amp; USDs
           </button>
           <div className="landing-page-divbalancebox">
             <div className="landing-page-img01">
               <img
-                src="/frame1298-ssto.svg"
+                src={spaarbitrium}
                 alt="Frame1298"
                 className="landing-page-frame01"
               />
             </div>
             <span className="landing-page-text16">0</span>
             <div className="landing-page-img02">
-              <img
-                src="/frame1305-mnqoh.svg"
-                alt="Frame1305"
-                className="landing-page-frame02"
-              />
+              <img src={downArrow} alt="Frame1305" width={10} />
             </div>
           </div>
 
@@ -90,7 +87,7 @@ function Header() {
 
           <div className="landing-page-diviicon241">
             <img
-              src="/imorecc8d8ec7svg1310-s84mb.svg"
+              src={settings}
               alt="imorecc8d8ec7svg1310"
               className="landing-page-imorecc8d8ec7svg"
             />
@@ -100,19 +97,19 @@ function Header() {
           </div>
           <button className="landing-page-lightbutton1">
             <img
-              src="/outlinegeneralsuni131-ya6k.svg"
+              src={sun}
               alt="OutlineGeneralSunI131"
               className="landing-page-outline-general-sun1"
             />
           </button>
         </div>
-        <div className="landing-page-lightbutton2">
+        {/* <div className="landing-page-lightbutton2">
           <img
             src="/outlinegeneralsun1318-w2x.svg"
             alt="OutlineGeneralSun1318"
             className="landing-page-outline-general-sun2"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

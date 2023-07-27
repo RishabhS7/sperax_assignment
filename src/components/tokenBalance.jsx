@@ -50,7 +50,7 @@ function TokenBalance({ balance, setBalance, tokenAddress, setTokenAddress }) {
               <span>Token Balance</span>
             </span>
             <span className="landing-page-text29">
-              <span>{formatEther(balance)}</span>
+              <span>{Number(formatEther(balance)).toFixed(4)}</span>
             </span>
           </div>
         </div>

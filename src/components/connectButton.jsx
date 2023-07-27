@@ -47,7 +47,7 @@ export const ConnectWalletButton = () => {
                   className="connectwallet"
                 >
                   {account.displayName}
-                  {account.displayBalance ? ` (${account.displayBalance})` : ""}
+                  {/* {account.displayBalance ? ` (${account.displayBalance})` : ""} */}
                 </button>
               );
             })()}

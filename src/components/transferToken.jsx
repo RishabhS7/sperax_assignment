@@ -1,31 +1,49 @@
 import { useEffect, useState } from "react";
-import { useContractWrite } from "wagmi";
+import { useContractWrite, useWaitForTransaction } from "wagmi";
 import { useAccount, useContractRead } from "wagmi";
 import erc20ABI from "../abis/erc20ABI.json";
 import { parseEther } from "viem";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-import Loader from "./loader";
+import TxnStatus from "./txnStatus";
 
 function TransferToken({ balance, tokenAddress }) {
-  const [modalIsOpen, setIsOpen] = useState(true);
+  const [modalIsOpen, setIsOpen] = useState(false);
   const { address } = useAccount();
   const [recipient, setRecipient] = useState("");
   const [amount, setAmout] = useState("");
-  const { data, isLoading, isSuccess, write } = useContractWrite({
-    address: tokenAddress,
-    abi: erc20ABI,
-    functionName: "transfer",
-    args: [recipient, parseEther(amount).toString()],
-    onSuccess(data) {
-      console.log("console.log", data);
-    },
-    onError(data) {
-      console.log(data);
+  const [txnStatus, setTxnStatus] = useState({ status: "", msg: "" });
+  const { data, isLoading, isSuccess, isError, isIdle, write } =
+    useContractWrite({
+      address: tokenAddress,
+      abi: erc20ABI,
+      functionName: "transfer",
+      args: [recipient, parseEther(amount).toString()],
+      onSettled(data) {
+        console.log(data);
+      },
+      onMutate(data) {
+        console.log("mutated", data);
+      },
+      onSuccess(data) {
+        console.log("success", data);
+        setTxnStatus({ status: "loading", msg: "Transaction Submitted" });
+      },
+      onError(data) {
+        setTxnStatus({ status: "error", msg: "Transaction failed" });
+      },
+    });
+  const waitForTransaction = useWaitForTransaction({
+    hash: data?.hash,
+    onSuccess() {
+      setTxnStatus({ status: "complete", msg: "Transaction Successful" });
     },
   });
+  console.log("wait", waitForTransaction);
 
   const transferTokens = () => {
+    setTxnStatus({ status: "loading", msg: "Confirm your transaction.." });
+    setIsOpen(true);
     console.log(address, recipient, parseEther(amount).toString());
     write();
     if (isLoading) {
@@ -34,6 +52,16 @@ function TransferToken({ balance, tokenAddress }) {
       console.log(data);
     }
   };
+  console.log(
+    "err",
+    isError,
+    "idle",
+    isIdle,
+    "load",
+    isLoading,
+    "succ",
+    isSuccess
+  );
   return (
     <div id="modalelemet" className="landing-page-frame5">
       <div className="landing-page-frame09">
@@ -88,9 +116,9 @@ function TransferToken({ balance, tokenAddress }) {
         }}
       >
         <div>
-          <div>Transaction is processing..</div>
+          <div>{txnStatus.msg}</div>
           <div>
-            <Loader status={"error"} size={100} />
+            <TxnStatus status={txnStatus.status} size={100} />
           </div>
         </div>
       </Modal>

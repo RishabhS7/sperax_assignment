@@ -1,7 +1,7 @@
 import loader from "../assets/loader.svg";
 import complete from "../assets/complete.svg";
 import error from "../assets/error.svg";
-function Loader({ status, size }) {
+function TxnStatus({ status, size }) {
   return status === "loading" ? (
     <img
       src={loader}
@@ -25,4 +25,4 @@ function Loader({ status, size }) {
     />
   ) : null;
 }
-export default Loader;
+export default TxnStatus;

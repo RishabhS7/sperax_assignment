@@ -1,3 +1,4 @@
+h
 .modalClass {
   border-radius: 10px;
   /* min-height: 40%; */
@@ -221,6 +222,7 @@
   flex-shrink: 0;
 }
 .landing-page-button {
+  border: none;
   top: 18.600006103515625px;
   left: -38.409912109375px;
   width: 142px;
@@ -313,10 +315,10 @@
   top: 18.600006103515625px;
   left: 232.275146484375px;
   width: 148px;
-  display: flex;
-  padding: 4px 20px;
+
+  padding: 4px;
   position: absolute;
-  align-items: flex-start;
+
   border-radius: 90px;
   background-color: rgba(49, 193, 191, 1);
   color: rgba(255, 255, 255, 1);
@@ -329,6 +331,7 @@
   line-height: 24px;
   font-stretch: normal;
   text-decoration: none;
+  margin: auto;
 }
 .connectwallet:hover {
   background-color: rgba(49, 185, 191, 1);
@@ -385,6 +388,7 @@
   border-radius: 90px;
   justify-content: center;
   background-color: rgba(233, 234, 240, 1);
+  border: none;
 }
 .landing-page-outline-general-sun1 {
   width: 20px;
@@ -459,13 +463,13 @@
   left: 20px;
   width: 90px;
   height: 38px;
-  display: flex;
   position: absolute;
   box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.20000000298023224);
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
   background-color: rgba(49, 193, 191, 1);
+  border: none;
 }
 .landing-page-text21 {
   left: 7px;
